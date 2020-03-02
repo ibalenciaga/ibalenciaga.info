@@ -2,6 +2,7 @@
 html {
     overflow-x: hidden
 }
+
 body {
     background: #fff;
     font-size: 14px;
@@ -17,6 +18,7 @@ body {
     backface-visibility: hidden;
     overflow-x: hidden
 }
+
 h1,
 h2,
 h3,
@@ -25,37 +27,45 @@ h4 {
     font-weight: 700;
     font-family: "Source Sans Pro", sans-serif
 }
+
 .script-font {
     font-family: 'Shadows Into Light', cursive
 }
+
 a {
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     -o-transition: all .2s linear;
     transition: all .2s linear
 }
+
 a:hover {
     text-decoration: none
 }
+
 a a:focus {
     outline: 0
 }
+
 p {
     font-weight: 400;
     font-family: "Source Sans Pro", sans-serif;
     margin: 0;
     font-size: 14px
 }
+
 ol,
 ul {
     list-style: outside none none;
     margin: 0;
     padding: 0
 }
+
 ol li,
 ul li {
     list-style: none
 }
+
 .hero-heading {
     font-size: 48px;
     font-weight: 700;
@@ -64,6 +74,7 @@ ul li {
     line-height: 70px;
     letter-spacing: .1rem
 }
+
 .hero-sub-heading {
     font-size: 20px;
     font-weight: 400;
@@ -71,6 +82,7 @@ ul li {
     line-height: 45px;
     letter-spacing: .1rem
 }
+
 .section-titile-bg {
     display: inline;
     font-size: 115px;
@@ -83,12 +95,14 @@ ul li {
     width: 100%;
     text-align: center
 }
+
 .section-title-header p {
     text: center;
     font-weight: 400;
     line-height: 26px;
     padding-bottom: 36px
 }
+
 .section-title {
     color: #252525;
     font-size: 38px;
@@ -99,6 +113,7 @@ ul li {
     padding: 0 10px;
     position: relative
 }
+
 .btn {
     font-size: 14px;
     padding: 10px 8px;
@@ -114,17 +129,20 @@ ul li {
     transition: all .2s linear;
     display: inline-block
 }
+
 .btn:active,
 .btn:focus {
     box-shadow: none;
     outline: 0;
     color: #fff
 }
+
 .btn-common {
     background-color: #00b4d9;
     position: relative;
     z-index: 1
 }
+
 .btn-common:hover {
     color: #fff;
     background-color: #21cff3;
@@ -133,6 +151,7 @@ ul li {
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out
 }
+
 .btn-danger:hover {
     background-color: #f55262;
     border-color: #f55262;
@@ -141,35 +160,43 @@ ul li {
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out
 }
+
 .btn-border {
     color: #fff;
     background-color: transparent;
     border: 1px solid #fff
 }
+
 .btn-border:hover {
     border: 1px solid #fff;
     color: #fff;
     background-color: rgba(255, 255, 255, .2)
 }
+
 .btn-lg {
     padding: 14px 33px;
     text-transform: uppercase;
     font-size: 16px
 }
+
 .btn-rm {
     padding: 7px 10px;
     text-transform: capitalize
 }
+
 button:focus {
     outline: 0!important
 }
+
 .icon-check,
 .icon-close {
     color: #00b4d9
 }
+
 .social-icon li {
     display: inline-block
 }
+
 .social-icon li a {
     color: #000;
     background: #fff;
@@ -186,27 +213,35 @@ button:focus {
     -webkit-transition: all .3s ease-in-out 0s;
     -o-transition: all .3s ease-in-out 0s
 }
+
 .social-icon li a:hover {
     color: #fff
 }
+
 .social-icon li .facebook:hover {
     background: #00b4d9
 }
+
 .social-icon li .twitter:hover {
     background: #4a9cec
 }
+
 .social-icon li .instagram:hover {
     background: #d6274d
 }
+
 .social-icon li .linkedin:hover {
     background: #1260a2
 }
+
 .social-icon li .google:hover {
     background: #ce332a
 }
+
 a {
     color: #21cff3
 }
+
 a.back-to-top {
     display: none;
     position: fixed;
@@ -214,6 +249,7 @@ a.back-to-top {
     right: 15px;
     text-decoration: none
 }
+
 a.back-to-top i {
     display: block;
     font-size: 22px;
@@ -230,10 +266,12 @@ a.back-to-top i {
     -o-transition: all .2s ease-in-out;
     box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28)
 }
+
 a.back-to-top:focus,
 a.back-to-top:hover {
     text-decoration: none
 }
+
 #loader {
     position: fixed;
     background: #fff;
@@ -243,6 +281,7 @@ a.back-to-top:hover {
     height: 100%;
     z-index: 9999999999
 }
+
 .square-spin {
     position: absolute;
     top: 50%;
@@ -250,33 +289,42 @@ a.back-to-top:hover {
     margin-left: -40px;
     margin-top: -40px
 }
+
 .square-spin img {
     max-width: 64px
 }
+
 .section-padding {
     padding: 60px 0
 }
+
 #about .img-thumb img {
     border: 8px solid #fff;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2)
 }
+
 #about span {
     font-size: 20px
 }
+
 .profile-wrapper {
     padding: 30px 0
 }
+
 .profile-wrapper .btn {
     margin: 10px 10px 0 0
 }
+
 .profile-wrapper .btn i {
     vertical-align: middle;
     margin-right: 5px
 }
+
 .about-profile {
     position: relative;
     margin: 20px 0 20px 0
 }
+
 .about-profile .pro-title {
     font-weight: 700;
     color: #040404;
@@ -285,6 +333,7 @@ a.back-to-top:hover {
     display: inline-block;
     margin-bottom: 5px
 }
+
 .about-profile .pro-title:after {
     position: absolute;
     content: ':';
@@ -292,16 +341,19 @@ a.back-to-top:hover {
     font-size: 14px;
     left: 105px
 }
+
 .about-profile .admin-sign {
     position: absolute;
     right: 45px;
     bottom: 10px
 }
+
 .counter-section {
     background: url(../img/background/bg-1.jpg);
     overflow: hidden;
     position: relative
 }
+
 .counter-section:before {
     content: '';
     position: absolute;
@@ -311,16 +363,20 @@ a.back-to-top:hover {
     height: 100%;
     background: rgba(0, 0, 0, .5)
 }
+
 .counter-section .counter {
     padding: 30px 0
 }
+
 .counter-section .counter .icon {
     margin-bottom: 30px;
 }
+
 .counter-section .counter .icon i {
     font-size: 48px;
     color: #00b4d9
 }
+
 .counter-section .counter p {
     font-size: 18px;
     text-transform: uppercase;
@@ -329,50 +385,61 @@ a.back-to-top:hover {
     letter-spacing: 1px;
     margin: 30px 0
 }
+
 .counter-section .counter .counterUp {
     color: #fff;
     font-size: 42px;
     margin-top: 15px;
     font-weight: 700
 }
+
 .timeline {
     position: relative
 }
+
 .timeline .timelin-title {
     font-size: 20px;
     text-transform: uppercase;
     margin-left: 25px
 }
+
 .timeline li {
     padding: 0 20px 20px 30px;
     list-style: none;
     border-left: 2px solid #f1f1f1
 }
+
 .timeline li .content-text {
     background: #f2f2f2;
-    padding: 20px
+    padding: 10px 20px;
 }
+
 .timeline li .line-title {
     font-size: 16px;
     line-height: 15px
 }
+
 .timeline li span {
     font-size: 12px;
     padding: 9px 0;
     display: block
 }
+
 .timeline li .line-text {
     color: #888;
     line-height: 18px
 }
+
 .timeline li:first-child:before {
     border: 0;
     background: 0 0;
     position: relative
 }
+
 .timeline li:last-child {
     padding: 0 20px 0 30px
 }
+
 .timeline li:before {
     content: "";
     border: solid 2px;
@@ -390,6 +457,7 @@ a.back-to-top:hover {
     margin-top: 18px;
     border-color: #00b4d9!important
 }
+
 .timeline li:first-child i {
     font-size: 20px;
     float: left;
@@ -403,10 +471,12 @@ a.back-to-top:hover {
     height: 50px;
     text-align: center
 }
+
 .navbar-brand {
     position: relative;
     padding: 0
 }
+
 .top-nav-collapse {
     background: #fff;
     z-index: 999999;
@@ -421,30 +491,38 @@ a.back-to-top:hover {
     animation-name: fadeInDown;
     background: #fff!important
 }
+
 .top-nav-collapse .navbar-brand {
     top: 0
 }
+
 .top-nav-collapse .navbar-brand img {
     width: 65%
 }
+
 .top-nav-collapse .navbar-nav .nav-link {
     color: #333!important;
     margin-top: 0!important;
     margin-bottom: 0!important
 }
+
 .top-nav-collapse .navbar-nav .nav-link:hover {
     cursor: pointer;
     color: #00b4d9!important
 }
+
 .top-nav-collapse .navbar-nav li.active a.nav-link {
     color: #00b4d9!important
 }
+
 .indigo {
     background: #fff
 }
+
 .menu-bg {
     background: 0 0
 }
+
 .navbar-expand-lg .navbar-nav .nav-link i {
     font-size: 28px;
     color: #00b4d9;
@@ -453,9 +531,11 @@ a.back-to-top:hover {
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
+
 .navbar-expand-lg .navbar-nav .nav-link i:hover {
     color: #21cff3
 }
+
 .navbar-expand-lg .navbar-nav .nav-link {
     color: #333;
     font-weight: 700;
@@ -470,21 +550,26 @@ a.back-to-top:hover {
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
+
 .navbar-expand-lg .navbar-nav li .active>a,
 .navbar-expand-lg .navbar-nav li a:focus,
 .navbar-expand-lg .navbar-nav li a:hover {
     color: #00b4d9;
     outline: 0
 }
+
 .navbar {
     padding: 0
 }
+
 .navbar li.active a.nav-link {
     color: #00b4d9
 }
+
 .dropdown-toggle::after {
     display: none
 }
+
 .dropdown-menu {
     margin: 0;
     padding: 0;
@@ -503,6 +588,7 @@ a.back-to-top:hover {
     -o-animation: fadeIn .4s;
     -ms-animation: fadeIn .4s
 }
+
 .dropdown-menu:before {
     content: "";
     display: inline-block;
@@ -514,6 +600,7 @@ a.back-to-top:hover {
     border-left: 10px solid transparent;
     border-bottom: 10px solid #fff
 }
+
 .dropdown:hover .dropdown-menu {
     display: block;
     position: absolute;
@@ -526,6 +613,7 @@ a.back-to-top:hover {
     -o-animation: fadeIn .4s;
     -ms-animation: fadeIn .4s
 }
+
 .dropdown .dropdown-menu .dropdown-item {
     width: 100%;
     padding: 12px 20px;
@@ -544,31 +632,38 @@ a.back-to-top:hover {
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out
 }
+
 .dropdown .dropdown-menu .dropdown-item:last-child {
     border-bottom: none;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px
 }
+
 .dropdown .dropdown-menu .dropdown-item:first-child {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px
 }
+
 .dropdown .dropdown-item.active,
 .dropdown .dropdown-item:focus,
 .dropdown .dropdown-item:hover {
     color: #00b4d9
 }
+
 .dropdown-item.active,
 .dropdown-item:active {
     background: 0 0
 }
+
 .fadeInUpMenu {
     -webkit-animation-name: fadeInUpMenu;
     animation-name: fadeInUpMenu
 }
+
 .slicknav_btn {
     border-color: #00b4d9
 }
+
 .slicknav_menu .slicknav_icon-bar {
     background: #00b4d9
 }
@@ -578,15 +673,19 @@ a.back-to-top:hover {
         padding-top: 18px
     }
 }
+
 .navbar-toggler {
     display: none
 }
+
 .mobile-menu {
     display: none
 }
+
 .slicknav_menu {
     display: none
 }
+
 @media screen and (max-width: 768px) {
     .navbar-header {
         width: 100%
@@ -617,15 +716,18 @@ a.back-to-top:hover {
         background: #f8f9fa
     }
 }
+
 .hero-area-bg {
     background: url(../img/hero-area.jpg) no-repeat;
     background-size: cover
 }
+
 #hero-area {
     color: #fff;
     overflow: hidden;
     position: relative
 }
+
 #hero-area .overlay {
     position: absolute;
     width: 100%;
@@ -635,12 +737,15 @@ a.back-to-top:hover {
     background: #0c0808;
     opacity: .6
 }
+
 #hero-area .contents {
     padding: 175px 0 120px
 }
+
 #hero-area .contents h5 {
     font-size: 50px
 }
+
 #hero-area .contents .head-title {
     color: #fff;
     font-size: 80px;
@@ -648,6 +753,7 @@ a.back-to-top:hover {
     text-transform: uppercase;
     font-weight: 700
 }
+
 #hero-area .contents p {
     font-size: 30px;
     color: #fff;
@@ -655,13 +761,16 @@ a.back-to-top:hover {
     line-height: 30px;
     margin-bottom: 25px
 }
+
 #hero-area .contents .btn {
     margin: 25px 0;
     text-transform: uppercase
 }
+
 #hero-area .banner_bottom_btn {
     margin-top: 40px
 }
+
 #hero-area .banner_bottom_btn i {
     color: #fff;
     font-size: 48px;
@@ -670,14 +779,17 @@ a.back-to-top:hover {
     -o-transition: all .2s linear;
     transition: all .2s linear
 }
+
 #hero-area .banner_bottom_btn i:hover {
     color: #ddd
 }
+
 #hero-area-cookies {
     color: #fff;
     overflow: hidden;
     position: relative
 }
+
 #hero-area-cookies .overlay {
     position: absolute;
     width: 100%;
@@ -687,12 +799,15 @@ a.back-to-top:hover {
     background: #0c0808;
     opacity: .6
 }
+
 #hero-area-cookies .contents {
     padding: 175px 0 120px
 }
+
 #hero-area-cookies .contents h5 {
     font-size: 50px
 }
+
 #hero-area-cookies .contents .head-title {
     color: #fff;
     font-size: 80px;
@@ -700,6 +815,7 @@ a.back-to-top:hover {
     text-transform: uppercase;
     font-weight: 700
 }
+
 #hero-area-cookies .contents p {
     font-size: 30px;
     color: #fff;
@@ -707,13 +823,16 @@ a.back-to-top:hover {
     line-height: 30px;
     margin-bottom: 25px
 }
+
 #hero-area-cookies .contents .btn {
     margin: 25px 0;
     text-transform: uppercase
 }
+
 #hero-area-cookies .banner_bottom_btn {
     margin-top: 40px
 }
+
 #hero-area-cookies .banner_bottom_btn i {
     color: #fff;
     font-size: 48px;
@@ -722,59 +841,74 @@ a.back-to-top:hover {
     -o-transition: all .2s linear;
     transition: all .2s linear
 }
+
 #hero-area-cookies .banner_bottom_btn i:hover {
     color: #ddd
 }
+
 #portfolios {
     background: #f2f2f2
 }
+
 #portfolios .mix {
     padding: 30px
 }
+
 #portfolios .portfolio-item .shot-item {
     margin: 0
 }
+
 #portfolio .mix {
     display: none
 }
+
 #portfolios #portfolio h3 {
     font-size: 15px;
     margin-left: 10px
 }
+
 .controls {
     text-align: center;
     padding: 0 0 20px
 }
+
 .controls .active {
     color: #00b4d9!important;
     border-color: #00b4d9;
     background: 0 0
 }
+
 .controls .btn {
     text-transform: uppercase;
     margin: 2px;
     color: #fff
 }
+
 .controls:hover {
     cursor: pointer
 }
+
 .portfolio-img {
     overflow: hidden;
     display: block;
     position: relative
 }
+
 .portfolio-img img {
     width: 100%
 }
+
 .shot-item {
     margin-right: 15px;
     border-radius: 4px;
     background: #fff;
     position: relative
 }
+
 .shot-item img {
     width: 100%
 }
+
 .shot-item .overlay {
     position: absolute;
     width: 100%;
@@ -786,12 +920,15 @@ a.back-to-top:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out
 }
+
 .shot-item:hover .overlay {
     opacity: 1
 }
+
 .overlay {
     opacity: 0
 }
+
 .overlay .icons i {
     height: 42px;
     width: 42px;
@@ -812,12 +949,14 @@ a.back-to-top:hover {
     background: #fff;
     border-radius: 4px
 }
+
 .overlay .preview {
     position: absolute;
     left: 45%;
     top: 50%;
     color: #fff
 }
+
 .overlay .link {
     position: absolute;
     left: 60%;
@@ -825,26 +964,32 @@ a.back-to-top:hover {
     top: 50%;
     color: #fff
 }
+
 .shot-item:hover .overlay {
     opacity: 1
 }
+
 a:not([href]):not([tabindex]) {
     color: #fff
 }
+
 a:not([href]):not([tabindex]):focus,
 a:not([href]):not([tabindex]):hover {
     color: #fff
 }
-#services .container{
-	max-width: 100%;
+
+#services .container {
+    max-width: 100%;
 }
 
 #services .row {
     margin: 10px 0
 }
+
 #services div.container div.row div.col-md-6.col-lg-3.col-xs-6 {
     width: 50%
 }
+
 
 /* #services .service{width: 50%;} */
 
@@ -860,6 +1005,7 @@ a:not([href]):not([tabindex]):hover {
     -webkit-transition: all .3s ease-in-out 0s;
     -o-transition: all .3s ease-in-out 0s
 }
+
 #services .icon {
     width: auto;
 }
@@ -867,10 +1013,12 @@ a:not([href]):not([tabindex]):hover {
 .services {
     background: #f0f0f0;
 }
+
 .services-item .img-fluid {
     width: 128px;
     padding: 10px
 }
+
 .services-item .icon i {
     font-size: 42px;
     margin-bottom: 15px;
@@ -881,24 +1029,30 @@ a:not([href]):not([tabindex]):hover {
     height: 48px;
     color: #00b4d9
 }
+
 .services-item .services-content h3 {
     margin-top: 10px;
     margin-bottom: 10px
 }
+
 .services-item .services-content h3 a {
     font-size: 18px;
     text-transform: uppercase;
     color: #666
 }
+
 .services-item .services-content h3 a:hover {
     color: #00b4d9
 }
+
 .services-item .services-content p {
     line-height: 22px
 }
+
 .services-item:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, .2)
 }
+
 .form-control {
     width: 100%;
     margin-bottom: 20px;
@@ -910,15 +1064,18 @@ a:not([href]):not([tabindex]):hover {
     padding: 8px 10px;
     border: 1px solid #e1e1e1
 }
+
 .form-control:focus {
     box-shadow: none;
     outline: 0
 }
+
 .btn.disabled,
 .btn:disabled {
     opacity: 1
 }
-.contact{
+
+.contact {
     background: #f0f0f0;
 }
 
@@ -927,27 +1084,33 @@ a:not([href]):not([tabindex]):hover {
     box-shadow: 0 0 30px #ededed;
     padding: 60px 40px
 }
+
 .contact-form-area h2 {
     font-size: 18px;
     text-transform: uppercase
 }
+
 .footer-right-contact {
     padding: 4px;
     border: 1px solid #e1e1e1;
     margin-top: 30px
 }
+
 .footer-right-contact .single-contact {
     margin: 10px 22px;
     padding: 3px 55px;
     position: relative;
     color: #666
 }
+
 .footer-right-contact .single-contact p {
     margin-bottom: 5px
 }
+
 .footer-right-contact .single-contact p a {
     color: #666
 }
+
 .footer-right-contact .contact-icon {
     background: #00b4d9;
     color: #fff;
@@ -963,20 +1126,25 @@ a:not([href]):not([tabindex]):hover {
     transform: translateY(-50%);
     width: 40px
 }
+
 #contact {
     position: relative;
     overflow: hidden
 }
+
 #contact #contactForm {
     margin-top: 30px
 }
+
 .text-danger {
     font-size: 14px;
     margin-top: 10px
 }
+
 .list-unstyled li {
     color: #d9534f
 }
+
 #conatiner-map {
     margin-top: 30px;
     text-align: center;
@@ -988,30 +1156,38 @@ a:not([href]):not([tabindex]):hover {
     z-index: 101;
     width: 100%
 }
+
 .footer-area {
     background: #1c1c20
 }
+
 .footer-area .footer-text p {
     font-size: 14px;
     margin-top: 20px;
     color: #fff
 }
+
 .footer-area .footer-text p a {
     color: #00b4d9
 }
+
 .footer-area .footer-text .nav-inline .nav-link {
     padding: 11px 7px;
     color: #888
 }
+
 .footer-area .footer-text .nav-inline .nav-link:hover {
     color: #00b4d9
 }
+
 .footer-2 {
     background: #252525
 }
+
 .footer-2 img {
     margin-top: -8px
 }
+
 .footer-2 h3 {
     font-size: 20px;
     color: #fff;
@@ -1019,6 +1195,7 @@ a:not([href]):not([tabindex]):hover {
     padding-bottom: 10px;
     letter-spacing: .5px
 }
+
 .footer-2 p {
     font-size: 14px;
     color: #fff;
@@ -1026,26 +1203,31 @@ a:not([href]):not([tabindex]):hover {
     margin: 0;
     padding-right: 50px
 }
+
 .footer-2 ul li a {
     color: #fff;
     font-size: 13px;
     font-weight: 400
 }
+
 .footer-2 ul li a:hover {
     color: #00b4d9
 }
+
 #copyright {
     background: #333
 }
+
 #copyright p {
     line-height: 42px;
     color: #fff;
     margin: 0
 }
+
 #copyright p a {
     color: #fff
 }
+
 #copyright p a:hover {
     color: #00b4d9
 }
-
