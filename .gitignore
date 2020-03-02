@@ -20,6 +20,8 @@
 *.DS_Store?
 *._*
 *.Trashes
+*.htaccess
+.htaccess
 .DS_Store
 .DS_Store?
 ehthumbs.db

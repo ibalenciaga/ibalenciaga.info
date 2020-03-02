@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.php$
+Disallow: /*.pdf$
+Disallow: /politica_cookies.html
+Disallow: /envio_correo.php
+Sitemap: https://ibalenciaga.info/sitemap.xml
