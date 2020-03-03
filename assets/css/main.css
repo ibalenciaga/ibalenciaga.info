@@ -163,21 +163,14 @@ a:not([href]):not([tabindex]) {color: #fff}
 a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover {color: #fff}
 
 /* CONOCIMIENTOS */
-.services .section-title {color: #252525;font-size: 38px;text-align: center;letter-spacing: 1px;line-height: 1;margin-bottom: 48px;padding: 0 10px;position: relative}
-.services .container {max-width: 100%;}
-.services .row {margin: 10px 0}
-.services .container .row .col-md-6.col-lg-3.col-xs-6 {width: 50%}
-.services .services-item {width: auto;margin: 5px 0px;background: #fff;border-radius: 4px;box-shadow: 0 0 10px rgba(0, 0, 0, .2);text-align: center;transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-webkit-transition: all .3s ease-in-out 0s;
--o-transition: all .3s ease-in-out 0s}
 .services {background: #f0f0f0;}
-.services .services-item .img-fluid {width: 128px;padding: 10px}
-.services .services-item .icon i {font-size: 42px;margin-bottom: 15px;text-align: center;width: 48px;display: block;margin: 0 auto;height: 48px;color: #00b4d9}
-.services .services-item .services-content h3 {margin-top: 10px;margin-bottom: 10px}
-.services .services-item .services-content h3 a {font-size: 18px;text-transform: uppercase;color: #666}
-.services .services-item .services-content h3 a:hover {color: #00b4d9}
-.services .services-item .services-content p {line-height: 22px}
-.services .services-item:hover {box-shadow: 0 0 30px rgba(0, 0, 0, .2)}
-.services .icon {width: auto;}
+.services .section-title {color: #252525;font-size: 38px;text-align: center;letter-spacing: 1px;line-height: 1;margin-bottom: 48px;padding: 0 10px;position: relative}
+.services .section-title .container {max-width: 100%;}
+.services .section-title .container .row {margin: 10px 0}
+.services .section-title .container .row .services-item {width: auto;margin: 5px 0px;background: #fff;border-radius: 4px;box-shadow: 0 0 10px rgba(0, 0, 0, .2);text-align: center;transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-webkit-transition: all .3s ease-in-out 0s;-o-transition: all .3s ease-in-out 0s}
+.services .section-title .container .row .services-item:hover {box-shadow: 0 0 30px rgba(0, 0, 0, .2)}
+.services .section-title .container .row .services-item .icon {width: auto;}
+.services .section-title .container .row .services-item .icon .img-fluid {width: 128px;padding: 10px}
 
 /* CONTACTO*/
 .contact {background: #f0f0f0;position: relative;overflow: hidden;}
