@@ -516,7 +516,7 @@
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="g-recaptcha" data-sitekey="6LeTQt4UAAAAALiYBsO3RyJ1-kVQlUkfhiMqT1xG"></div>
+                                            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                                         </div>
                                         <div class="submit-button">
                                             <button class="btn btn-common" id="submit" type="submit">Enviar mensaje</button>
@@ -604,6 +604,19 @@
     <script src="assets/js/jquery.slicknav.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/cookies.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?render=6LeTQt4UAAAAALiYBsO3RyJ1-kVQlUkfhiMqT1xG'>
+    </script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LeTQt4UAAAAALiYBsO3RyJ1-kVQlUkfhiMqT1xG', {
+                    action: 'formulario'
+                })
+                .then(function(token) {
+                    var recaptchaResponse = document.getElementById('recaptchaResponse');
+                    recaptchaResponse.value = token;
+                });
+        });
+    </script>
 </body>
 
 </html>
