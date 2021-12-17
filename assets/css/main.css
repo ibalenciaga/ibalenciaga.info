@@ -54,7 +54,6 @@ a.back-to-top:focus,a.back-to-top:hover {text-decoration: none}
 .about-profile .pro-title {font-weight: 700;color: #040404;position: relative;width: 120px;display: inline-block;margin-bottom: 5px}
 .about-profile .pro-title:after {position: absolute;content: ':';color: #040404;font-size: 14px;left: 105px}
 .about-profile .admin-sign {position: absolute;right: 45px;bottom: 10px}
-.counter-section {background: url(../img/background/bg-1.jpg);overflow: hidden;position: relative}
 .counter-section:before {content: '';position: absolute;top: 0;bottom: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, .5)}
 .counter-section .counter {padding: 30px 0}
 .counter-section .counter .icon {margin-bottom: 30px;}
@@ -66,7 +65,7 @@ a.back-to-top:focus,a.back-to-top:hover {text-decoration: none}
 .timeline li {padding: 0 20px 20px 30px;list-style: none;border-left: 2px solid #f1f1f1}
 .timeline li .content-text {background: #f2f2f2;padding: 10px 20px;}
 .timeline li .line-title {font-size: 16px;line-height: 15px}
-.timeline li span {font-size: 12px;padding: ;display: block}
+.timeline li span {font-size: 12px;padding: 0;display: block}
 .timeline li .line-text {color: #888;line-height: 18px}
 .timeline li:first-child:before {border: 0;background: 0 0;position: relative}
 .timeline li:last-child {padding: 0 20px 0 30px}
