@@ -60,23 +60,6 @@ a.back-to-top:focus,a.back-to-top:hover {text-decoration: none}
 .counter-section .counter .icon i {font-size: 48px;color: #00b4d9}
 .counter-section .counter p {font-size: 18px;text-transform: uppercase;color: #fff;font-weight: 400;letter-spacing: 1px;margin: 30px 0}
 .counter-section .counter .counterUp {color: #fff;font-size: 42px;margin-top: 15px;font-weight: 700}
-.timeline {position: relative}
-.timeline .timeline-item{margin: 50px 0;}
-.timeline .timeline-content{display: flex;flex-flow: row wrap;justify-content: flex-start;}
-.timeline .timeline-title {font-size: 20px;text-transform: uppercase;display: flex;}
-.timeline .timeline-title i{padding-right: 10px;line-height: 1;font-size: 26px;}
-.timeline .timeline-title i:before{line-height: 30px}
-.timeline .timeline-title h2{line-height: 30px;color: #00b4d9;}
-.timeline .content-text{display: inline-grid;margin: 15px 15px 0 0;flex-basis: 164px; border: 3px solid #00b4d9;border-radius: 20px;overflow: hidden;}
-.timeline .content-text h3{font-size: 18px;}
-.timeline .content-text h4{font-size: 15px;font-weight: normal;}
-.timeline .content-text h5{font-size: 14px;color: #999999;}
-.timeline .content-title{background-color: #f0f0f0;padding: 10px;}
-.timeline .content-info{padding: 10px;}
-
-@media(min-width: 500px){
-    .timeline .content-text{flex-basis: 210px;}
-}
 
 .navbar-brand {position: relative;padding: 0}
 .top-nav-collapse {background: #fff;z-index: 999999;top: 0!important;min-height: 58px;box-shadow: 0 3px 6px 3px rgba(0, 0, 0, .06);-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation-name: fadeInDown;animation-name: fadeInDown;background: #fff!important}
@@ -179,6 +162,28 @@ a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover {color: 
 .services .services-item .icon {width: 60px;margin: 5px;background: #fff;border-radius: 50%;box-shadow: 0 0 10px rgba(0, 0, 0, .2);text-align: center;transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-webkit-transition: all .3s ease-in-out 0s;-o-transition: all .3s ease-in-out 0s}
 .services .services-item .icon .img-fluid {width: 55px;padding: 10px}
 
+/* TIMELINE */
+.timeline {position: relative}
+.timeline .timeline-item{margin: 50px 0;}
+.timeline .timeline-content{display: flex;flex-flow: row wrap;justify-content: flex-start;}
+.timeline .timeline-title {font-size: 20px;text-transform: uppercase;display: flex;}
+.timeline .timeline-title i{padding-right: 10px;line-height: 1;font-size: 26px;}
+.timeline .timeline-title i:before{line-height: 30px}
+.timeline .timeline-title h2{line-height: 30px;color: #00b4d9;}
+.timeline .content-text{display: inline-grid;margin: 15px 15px 0 0;flex-basis: 156px; border: 3px solid #00b4d9;border-radius: 20px;overflow: hidden;}
+.timeline .content-text h3{font-size: 18px;}
+.timeline .content-text h4{font-size: 15px;font-weight: normal;}
+.timeline .content-text h5{font-size: 14px;color: #999999;}
+.timeline .content-title{background-color: #f0f0f0;padding: 10px;}
+.timeline .content-info{padding: 10px;}
+
+@media(min-width: 500px){
+    .timeline .content-text{flex-basis: 210px;}
+}
+@media (min-width: 1200px) {
+    .timeline .container {max-width: 1800px;}
+}
+
 /* CONTACTO*/
 .contact {background: #f0f0f0;position: relative;overflow: hidden;}
 .contact .contact-form-area {background: #fff;box-shadow: 0 0 30px #ededed;padding: 60px 40px}
@@ -198,3 +203,10 @@ a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover {color: 
 .footer-area .footer-text p a {color: #00b4d9}
 .footer-area .footer-text .nav-inline .nav-link {padding: 11px 7px;color: #888}
 .footer-area .footer-text .nav-inline .nav-link:hover {color: #00b4d9}
+.footer-area .footer-text .social-icon{display: inline-flex;}
+.footer-area .footer-text li{margin: 20px;}
+.footer-area .footer-text .social-icon li{margin:0;}
+@media(min-width: 500px){
+    .footer-area .footer-text ul{display: inline-flex;}
+    .footer-area .footer-text li{margin: 0 20px;}
+}

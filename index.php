@@ -402,6 +402,14 @@
                             <a class="facebook" href="https://github.com/ibalenciaga" target="_blank"><i class="icon-social-github"></i></a>
                         </li>
                     </ul>
+                    <ul>
+                        <li>
+                            <a href="assets/documents/CV_IBalenciaga.pdf" class="btn btn-common" target="_blank"><i class="icon-paper-clip"></i> Curriculum Vitae</a>
+                        </li>
+                        <li>
+                            <a href="assets/documents/CR_IBalenciaga.pdf" class="btn btn-common" target="_blank"><i class="icon-paper-clip"></i> Carta de Recomendación</a>
+                        </li>
+                    </ul>
                     <p class="texto-pie">
                         <script type="text/javascript">
                             var today = new Date();
