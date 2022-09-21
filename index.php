@@ -180,136 +180,112 @@
 ?>
 <section id="services" class="services section-padding">
     <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Conocimientos</h2>
-    <div class="container">
-        <div class="row">
-            <!-- Services item -->
-            <?php foreach ($conocimientos as $conocimiento){ ?>
-            <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-1 service">
-                <div class="services-item wow fadeInDown" data-wow-delay="0.5s">
-                    <div class="icon">
-                        <img class="img-fluid" src="assets/img/conocimientos/<?=$conocimiento?>.png" alt="Conociemientos de <?=$conocimiento?>" title="Conociemientos de <?=$conocimiento?>">
-                    </div>
-                </div>
-            </div>
-            <?php } ?>
+    <div class="container services-item">
+        <!-- Services item -->
+        <?php foreach ($conocimientos as $conocimiento){ ?>
+        <div class="icon fadeInDown" data-wow-delay="0.5s">
+            <img class="img-fluid" src="assets/img/conocimientos/<?=$conocimiento?>.png" alt="Conociemientos de <?=$conocimiento?>" title="Conociemientos de <?=$conocimiento?>">
         </div>
+        <?php } ?>
     </div>
 </section>
 <!-- Services Section End -->
 <!-- Resume Section Start -->
-<section id="resume" class="section-padding">
+<section id="resume" class="section-padding timeline">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="education wow fadeInRight" data-wow-delay="0.3s">
-                    <ul class="timeline">
-                        <li>
-                            <i class="icon-briefcase"></i>
-                            <h2 class="timelin-title">Experiencia</h2>
-                        </li>
-                        <?php
-                        $experiencias = array(
-                            array("Desarrollador Web","OARO","Diciembre 2021 - Marzo 2022"),
-                            array("Desarrollador Web","Lombok","Junio 2019 - Marzo 2020"),
-                            array("Desarrollador Web","Feel Free Rentals","Octubre 2017 - Septiembre 2018"),
-                            array("Desarrollador Web","Servicios Creativos Bostnan","Marzo 2016 - Marzo 2017"),
-                            array("Administrador de Sistemas","ENTELGY","Marzo 2012 - Junio 2012"),
-                            array("Desarrollador Aplicaciones Multiplataforma","Tecnipesa","Marzo 2010 - Junio 2010"),
-                            array("Administrador de Sistemas","Ibermatica","Marzo 2009 - Julio 2009"),
-                        );
-                        foreach ($experiencias as $item){ ?>
-                        <li>
-                            <div class="content-text">
-                                <h3 class="line-title"><?=$item[0] ?> - <?=$item[1] ?></h3>
-                                <span><?=$item[2] ?></span>
-                            </div>
-                        </li>
-                        <?php } ?>
-                    </ul>
-                </div>
+        <div class="timeline-item experience">
+            <div class="timeline-title experience-title">
+                <i class="icon-briefcase"></i>
+                <h2>Experiencia</h2>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="experience wow fadeInRight" data-wow-delay="0.6s">
-                    <ul class="timeline">
-                        <li>
-                            <i><img src="assets/img/cursos/ibalenciaga-frontend-backend-developer-icon-cursos.png"></i>
-                            <h2 class="timelin-title">Cursos</h2>
-                        </li>
-                        <?php
-                        $cursos = array(
-                            array("PHP, SQL, POO, MVC, Laravel, Symfony, Wordpress","Online","Septiembre 2022"),
-                            array("Arquitectura Software Moderna: DDD, Eventos, Microservicios","Online","Julio 2022"),
-                            array("Principios SOLID con ejemplos","Online","Julio 2022"),
-                            array("Principios SOLID y clean code","Online","Julio 2022"),
-                            array("Docker: de 0 a deployment","Online","Marzo 2022"),
-                            array("Lógica de programación: Pruebas técnicas de código","Online","Julio 2021"),
-                            array("Creación de servidores locales","Online","Abril 2021"),
-                            array("Módulos Prestashop","Online","Abril 2021"),
-                            array("GIT","Online","Febrero 2020"),
-                            array("Symfony 5","Online","Enero 2020"),
-                            array("Introducción analítica web","Online","Septiembre 2019"),
-                            array("Programador Wordpress","Online","Septiembre 2019"),
-                            array("Desarrollo de Aplicaciones Web","Cebank","Abril 2019 - Junio 2019"),
-                        );
-                        foreach ($cursos as $item){ ?>
-                            <li>
-                                <div class="content-text">
-                                    <h3 class="line-title"><?=$item[0] ?> - <?=$item[1] ?></h3>
-                                    <span><?=$item[2] ?></span>
-                                </div>
-                            </li>
-                        <?php } ?>
-                    </ul>
+            <?php
+            $experiencias = array(
+                array("Desarrollador Web","OARO","2021 - 2022"),
+                array("Desarrollador Web","Lombok","2019 - 2020"),
+                array("Desarrollador Web","Feel Free Rentals","2017 - 2018"),
+                array("Desarrollador Web","Servicios Creativos Bostnan","2016 - 2017"),
+                array("Administrador de Sistemas","ENTELGY","2012"),
+                array("Desarrollador Aplicaciones Multiplataforma","Tecnipesa","2010"),
+                array("Administrador de Sistemas","Ibermatica","2009"),
+            ); ?>
+            <div class="timeline-content experience-content">
+                <?php foreach ($experiencias as $item){ ?>
+                <div class="content-text">
+                    <h3 class="line-title"><?=$item[0] ?></h3>
+                    <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
                 </div>
+                <?php } ?>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="experience wow fadeInRight" data-wow-delay="0.6s">
-                    <ul class="timeline">
-                        <li>
-                            <i class="icon-graduation"></i>
-                            <h2 class="timelin-title">Estudios</h2>
-                        </li>
-                        <?php
-                        $estudios = array(
-                            array("FP II - Desarrollo de Aplicaciones Web","Zubiri Manteo","2014 - 2016"),
-                            array("FP II - Electricidad y Electrónica","Don Bosco","2013"),
-                            array("FP II - Administrador de sistemas informáticos","Centro SEIM","2010 - 2012"),
-                            array("FP II - Desarrollo de Aplicaciones Multiplataforma","Centro SEIM","2008 - 2010"),
-                            array("FP II - Administrador de sistemas informáticos","Zubiri Manteo","2006 - 2009"),
-                        );
-                        foreach ($estudios as $item){ ?>
-                            <li>
-                                <div class="content-text">
-                                    <h3 class="line-title"><?=$item[0] ?> - <?=$item[1] ?></h3>
-                                    <span><?=$item[2] ?></span>
-                                </div>
-                            </li>
-                        <?php } ?>
-                    </ul>
-                </div>
+        </div>
+        <div class="timeline-item courses">
+            <div class="timeline-title courses-title">
+                <i class="icon-badge"></i>
+                <h2>Cursos</h2>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="experience wow fadeInRight" data-wow-delay="0.6s">
-                    <ul class="timeline">
-                        <li>
-                            <i><img src="assets/img/cursos/ibalenciaga-frontend-backend-developer-icon-freelance.png"></i>
-                            <h2 class="timelin-title">Freelance</h2>
-                        </li>
-                        <?php
-                        $freelance = array(
-                            array("Iparki","","Febrero 2018 - Agosto 2018"),
-                            array("Ilargi Berdea","","Junio 2019 - Marzo 2020")
-                        );
-                        foreach ($freelance as $item){ ?>
-                            <li>
-                                <div class="content-text">
-                                    <h3 class="line-title"><?=$item[0] ?> - <?=$item[1] ?></h3>
-                                    <span><?=$item[2] ?></span>
-                                </div>
-                            </li>
-                        <?php } ?>
-                    </ul>
+            <?php
+            $cursos = array(
+                array("PHP, SQL, POO, MVC, Laravel, Symfony, Wordpress","Online","Septiembre 2022"),
+                array("Arquitectura Software Moderna: DDD, Eventos, Microservicios","Online","Julio 2022"),
+                array("Principios SOLID con ejemplos","Online","Julio 2022"),
+                array("Principios SOLID y clean code","Online","Julio 2022"),
+                array("Docker: de 0 a deployment","Online","Marzo 2022"),
+                array("Lógica de programación: Pruebas técnicas de código","Online","Julio 2021"),
+                array("Creación de servidores locales","Online","Abril 2021"),
+                array("Módulos Prestashop","Online","Abril 2021"),
+                array("GIT","Online","Febrero 2020"),
+                array("Symfony 5","Online","Enero 2020"),
+                array("Introducción analítica web","Online","Septiembre 2019"),
+                array("Programador Wordpress","Online","Septiembre 2019"),
+                array("Desarrollo de Aplicaciones Web","Cebank","Abril 2019 - Junio 2019"),
+            ); ?>
+            <div class="timeline-content experience-content">
+                <?php foreach ($cursos as $item){ ?>
+                <div class="content-text">
+                    <h3 class="line-title"><?=$item[0] ?></h3>
+                    <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
                 </div>
+                <?php } ?>
+            </div>
+        </div>
+        <div class="timeline-item studies">
+            <div class="timeline-title studies-title">
+                <i class="icon-graduation"></i>
+                <h2>Estudios</h2>
+            </div>
+            <?php
+            $estudios = array(
+                array("FP II - Desarrollo de Aplicaciones Web","Zubiri Manteo","2014 - 2016"),
+                array("FP II - Electricidad y Electrónica","Don Bosco","2013"),
+                array("FP II - Administrador de sistemas informáticos","Centro SEIM","2010 - 2012"),
+                array("FP II - Desarrollo de Aplicaciones Multiplataforma","Centro SEIM","2008 - 2010"),
+                array("FP II - Administrador de sistemas informáticos","Zubiri Manteo","2006 - 2009"),
+            ); ?>
+            <div class="timeline-content studies-content">
+                <?php foreach ($estudios as $item){ ?>
+                <div class="content-text">
+                    <h3 class="line-title"><?=$item[0] ?></h3>
+                    <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
+                </div>
+                <?php } ?>
+            </div>
+        </div>
+        <div class="timeline-item freelance">
+            <div class="timeline-title freelance-title">
+                <i class="icon-home"></i>
+                <h2>Freelance</h2>
+            </div>
+            <?php
+            $freelance = array(
+                array("Iparki","","2018"),
+                array("Ilargi Berdea","","2019 - 2020")
+            ); ?>
+            <div class="timeline-content freelance-content">
+                <?php foreach ($freelance as $item){ ?>
+                <div class="content-text">
+                    <h3 class="line-title"><?=$item[0] ?></h3>
+                    <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
+                </div>
+                <?php } ?>
             </div>
         </div>
     </div>
