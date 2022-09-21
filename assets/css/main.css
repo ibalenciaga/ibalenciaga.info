@@ -131,7 +131,10 @@ a.back-to-top:focus,a.back-to-top:hover {text-decoration: none}
 #hero-area .contents h5 {font-size: 50px}
 #hero-area .contents .head-title {color: #fff;font-size: 80px;letter-spacing: 10px;text-transform: uppercase;font-weight: 700}
 #hero-area .contents p {font-size: 30px;color: #fff;font-weight: 400;line-height: 30px;margin-bottom: 25px}
-#hero-area .contents .btn {margin: 25px 0;text-transform: uppercase}
+#hero-area .contents .btn {margin: 15px 0;text-transform: uppercase}
+@media(min-width: 500px){
+    #hero-area .contents .btn {margin: 10px 0;}
+}
 #hero-area .banner_bottom_btn {margin-top: 40px}
 #hero-area .banner_bottom_btn i {color: #fff;font-size: 48px;-webkit-transition: all .2s linear;-moz-transition: all .2s linear;-o-transition: all .2s linear;transition: all .2s linear}
 #hero-area .banner_bottom_btn i:hover {color: #ddd}

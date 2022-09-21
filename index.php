@@ -131,6 +131,12 @@
                                 <a class="facebook" href="https://github.com/ibalenciaga" target="_blank"><i class="icon-social-github"></i></a>
                             </li>
                         </ul>
+                        <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                            <a href="assets/documents/CV_IBalenciaga.pdf" class="btn btn-common" target="_blank"><i class="icon-paper-clip"></i> Curriculum Vitae</a>
+                        </ul>
+                        <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                            <a href="assets/documents/CR_IBalenciaga.pdf" class="btn btn-common" target="_blank"><i class="icon-paper-clip"></i> Carta de Recomendación</a>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -163,8 +169,6 @@
                             <li><span class="pro-title"> Email </span> <span class="pro-detail">ibalenciaga@gmail.com</span></li>
                             <li><span class="pro-title"> Teléfono </span> <span class="pro-detail">645720230</span></li>
                         </ul>
-                        <a href="assets/documents/CV_IBalenciaga.pdf" class="btn btn-common" target="_blank"><i class="icon-paper-clip"></i>Curriculum Vitae</a>
-                        <a href="assets/documents/CR_IBalenciaga.pdf" class="btn btn-common" target="_blank"><i class="icon-paper-clip"></i>Carta de Recomendación</a>
                     </div>
                 </div>
             </div>
