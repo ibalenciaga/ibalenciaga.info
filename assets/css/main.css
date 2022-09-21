@@ -62,15 +62,17 @@ a.back-to-top:focus,a.back-to-top:hover {text-decoration: none}
 .counter-section .counter .counterUp {color: #fff;font-size: 42px;margin-top: 15px;font-weight: 700}
 .timeline {position: relative}
 .timeline .timeline-item{margin: 50px 0;}
-.timeline .timeline-content{display: flex;flex-flow: row wrap;align-items: center;justify-content: flex-start;}
+.timeline .timeline-content{display: flex;flex-flow: row wrap;justify-content: flex-start;}
 .timeline .timeline-title {font-size: 20px;text-transform: uppercase;display: flex;}
 .timeline .timeline-title i{padding-right: 10px;line-height: 1;font-size: 26px;}
 .timeline .timeline-title i:before{line-height: 30px}
 .timeline .timeline-title h2{line-height: 30px;color: #00b4d9;}
-.timeline .content-text{display: inline-grid;flex-basis: 164px;height: 160px; margin: 15px 15px 0 0;border: 3px solid #00b4d9;border-radius: 20px;padding: 10px;}
-.timeline .content-text h3{font-size: 18px; height: 90px}
+.timeline .content-text{display: inline-grid;margin: 15px 15px 0 0;flex-basis: 164px; border: 3px solid #00b4d9;border-radius: 20px;overflow: hidden;}
+.timeline .content-text h3{font-size: 18px;}
 .timeline .content-text h4{font-size: 15px;font-weight: normal;}
 .timeline .content-text h5{font-size: 14px;color: #999999;}
+.timeline .content-title{background-color: #f0f0f0;padding: 10px;}
+.timeline .content-info{padding: 10px;}
 
 @media(min-width: 500px){
     .timeline .content-text{flex-basis: 210px;}

@@ -211,8 +211,12 @@
             <div class="timeline-content experience-content">
                 <?php foreach ($experiencias as $item){ ?>
                 <div class="content-text">
-                    <h3 class="line-title"><?=$item[0] ?></h3>
-                    <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
+                    <div class="content-title">
+                        <h3 class="line-title"><?=$item[0] ?></h3>
+                    </div>
+                    <div class="content-info">
+                        <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
+                    </div>
                 </div>
                 <?php } ?>
             </div>
@@ -224,25 +228,29 @@
             </div>
             <?php
             $cursos = array(
-                array("PHP, SQL, POO, MVC, Laravel, Symfony, Wordpress","Online","Septiembre 2022"),
-                array("Arquitectura Software Moderna: DDD, Eventos, Microservicios","Online","Julio 2022"),
-                array("Principios SOLID con ejemplos","Online","Julio 2022"),
+                array("PHP, SQL, POO, MVC, Laravel, Symfony, Wordpress","Septiembre 2022"),
+                array("Arquitectura Software Moderna: DDD, Eventos, Microservicios","Julio 2022"),
+                array("Principios SOLID con ejemplos","Julio 2022"),
                 array("Principios SOLID y clean code","Online","Julio 2022"),
                 array("Docker: de 0 a deployment","Online","Marzo 2022"),
-                array("Lógica de programación: Pruebas técnicas de código","Online","Julio 2021"),
-                array("Creación de servidores locales","Online","Abril 2021"),
-                array("Módulos Prestashop","Online","Abril 2021"),
-                array("GIT","Online","Febrero 2020"),
-                array("Symfony 5","Online","Enero 2020"),
-                array("Introducción analítica web","Online","Septiembre 2019"),
-                array("Programador Wordpress","Online","Septiembre 2019"),
-                array("Desarrollo de Aplicaciones Web","Cebank","Abril 2019 - Junio 2019"),
+                array("Lógica de programación: Pruebas técnicas de código","Julio 2021"),
+                array("Creación de servidores locales","Abril 2021"),
+                array("Módulos Prestashop","Abril 2021"),
+                array("GIT","Febrero 2020"),
+                array("Symfony 5","Enero 2020"),
+                array("Introducción analítica web","Septiembre 2019"),
+                array("Programador Wordpress","Septiembre 2019"),
+                array("Desarrollo de Aplicaciones Web","Junio 2019"),
             ); ?>
             <div class="timeline-content experience-content">
                 <?php foreach ($cursos as $item){ ?>
                 <div class="content-text">
-                    <h3 class="line-title"><?=$item[0] ?></h3>
-                    <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
+                    <div class="content-title">
+                        <h3 class="line-title"><?=$item[0] ?></h3>
+                    </div>
+                    <div class="content-info">
+                        <h4><?=$item[1]?></h4>
+                    </div>
                 </div>
                 <?php } ?>
             </div>
@@ -263,8 +271,12 @@
             <div class="timeline-content studies-content">
                 <?php foreach ($estudios as $item){ ?>
                 <div class="content-text">
-                    <h3 class="line-title"><?=$item[0] ?></h3>
-                    <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
+                    <div class="content-title">
+                        <h3 class="line-title"><?=$item[0] ?></h3>
+                    </div>
+                    <div class="content-info">
+                        <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
+                    </div>
                 </div>
                 <?php } ?>
             </div>
@@ -276,14 +288,18 @@
             </div>
             <?php
             $freelance = array(
-                array("Iparki","","2018"),
-                array("Ilargi Berdea","","2019 - 2020")
+                array("Iparki","2018"),
+                array("Ilargi Berdea","2019 - 2020")
             ); ?>
             <div class="timeline-content freelance-content">
                 <?php foreach ($freelance as $item){ ?>
                 <div class="content-text">
-                    <h3 class="line-title"><?=$item[0] ?></h3>
-                    <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
+                    <div class="content-title">
+                        <h3 class="line-title"><?=$item[0] ?></h3>
+                    </div>
+                    <div class="content-info">
+                        <h4><?=$item[1] ?></h4>
+                    </div>
                 </div>
                 <?php } ?>
             </div>
