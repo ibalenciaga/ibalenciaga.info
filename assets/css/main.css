@@ -61,16 +61,21 @@ a.back-to-top:focus,a.back-to-top:hover {text-decoration: none}
 .counter-section .counter p {font-size: 18px;text-transform: uppercase;color: #fff;font-weight: 400;letter-spacing: 1px;margin: 30px 0}
 .counter-section .counter .counterUp {color: #fff;font-size: 42px;margin-top: 15px;font-weight: 700}
 .timeline {position: relative}
-.timeline .timelin-title {font-size: 20px;text-transform: uppercase;margin-left: 25px}
-.timeline li {padding: 0 20px 20px 30px;list-style: none;border-left: 2px solid #f1f1f1}
-.timeline li .content-text {background: #f2f2f2;padding: 10px 20px;}
-.timeline li .line-title {font-size: 16px;line-height: 15px}
-.timeline li span {font-size: 12px;padding: 0;display: block}
-.timeline li .line-text {color: #888;line-height: 18px}
-.timeline li:first-child:before {border: 0;background: 0 0;position: relative}
-.timeline li:last-child {padding: 0 20px 0 30px}
-.timeline li:before {content: "";border: solid 2px;width: 8px;height: 8px;border-radius: 50px;-moz-border-radius: 50px;-webkit-border-radius: 50px;font-size: 8px;margin-left: -35px;font-weight: 400;background: #fff;display: block;position: absolute;margin-top: 18px;border-color: #00b4d9!important}
-.timeline li:first-child i {font-size: 20px;float: left;margin-left: -30px;line-height: 50px;border-radius: 30px;margin: -12px -55px;background: #00b4d9;color: #fff;width: 50px;height: 50px;text-align: center}
+.timeline .timeline-item{margin: 50px 0;}
+.timeline .timeline-content{display: flex;flex-flow: row wrap;align-items: center;justify-content: flex-start;}
+.timeline .timeline-title {font-size: 20px;text-transform: uppercase;display: flex;}
+.timeline .timeline-title i{padding-right: 10px;line-height: 1;font-size: 26px;}
+.timeline .timeline-title i:before{line-height: 30px}
+.timeline .timeline-title h2{line-height: 30px;color: #00b4d9;}
+.timeline .content-text{display: inline-grid;flex-basis: 164px;height: 160px; margin: 15px 15px 0 0;border: 3px solid #00b4d9;border-radius: 20px;padding: 10px;}
+.timeline .content-text h3{font-size: 18px; height: 90px}
+.timeline .content-text h4{font-size: 15px;font-weight: normal;}
+.timeline .content-text h5{font-size: 14px;color: #999999;}
+
+@media(min-width: 500px){
+    .timeline .content-text{flex-basis: 210px;}
+}
+
 .navbar-brand {position: relative;padding: 0}
 .top-nav-collapse {background: #fff;z-index: 999999;top: 0!important;min-height: 58px;box-shadow: 0 3px 6px 3px rgba(0, 0, 0, .06);-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation-name: fadeInDown;animation-name: fadeInDown;background: #fff!important}
 .top-nav-collapse .navbar-brand {top: 0}
@@ -164,12 +169,10 @@ a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover {color: 
 /* CONOCIMIENTOS */
 .services {background: #f0f0f0;}
 .services .section-title {color: #252525;font-size: 38px;text-align: center;letter-spacing: 1px;line-height: 1;margin-bottom: 48px;padding: 0 10px;position: relative}
-.services .section-title .container {max-width: 100%;}
-.services .section-title .container .row {margin: 10px 0}
-.services .section-title .container .row .services-item {width: auto;margin: 5px 0px;background: #fff;border-radius: 4px;box-shadow: 0 0 10px rgba(0, 0, 0, .2);text-align: center;transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-webkit-transition: all .3s ease-in-out 0s;-o-transition: all .3s ease-in-out 0s}
-.services .section-title .container .row .services-item:hover {box-shadow: 0 0 30px rgba(0, 0, 0, .2)}
-.services .section-title .container .row .services-item .icon {width: auto;}
-.services .section-title .container .row .services-item .icon .img-fluid {width: 128px;padding: 10px}
+.services .container{display: flex;flex-flow: row wrap;align-items: center;justify-content: center;}
+.services .services-item:hover {box-shadow: 0 0 30px rgba(0, 0, 0, .2)}
+.services .services-item .icon {width: 60px;margin: 5px;background: #fff;border-radius: 50%;box-shadow: 0 0 10px rgba(0, 0, 0, .2);text-align: center;transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-webkit-transition: all .3s ease-in-out 0s;-o-transition: all .3s ease-in-out 0s}
+.services .services-item .icon .img-fluid {width: 55px;padding: 10px}
 
 /* CONTACTO*/
 .contact {background: #f0f0f0;position: relative;overflow: hidden;}
