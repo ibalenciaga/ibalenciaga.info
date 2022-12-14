@@ -4,14 +4,11 @@ $conocimientos = Array(
 );
 
 $experiencias = array(
-    array("Desarrollador Web","BIBAGU","2022 - Actualidad", "Crear nuevas funcionalidades a la aplicación web interna. Framewrok Codeigniter y Vue.js"),
-    array("Desarrollador Web","OARO","2021 - 2022", "Crear nuevas funcionalidades a la aplicación web interna. Framewrok Codeigniter y Vue.js"),
-    array("Desarrollador Web","Lombok","2019 - 2020", "Crear nuevas funcionalidades a la aplicación web interna. Framewrok Codeigniter y Vue.js"),
-    array("Desarrollador Web","Feel Free Rentals","2017 - 2018", "Crear nuevas funcionalidades a la aplicación web interna. Framewrok Codeigniter y Vue.js"),
+    array("Desarrollador Web","BIBAGU","2022 - Actualidad", "Crear nuevas funcionalidades a la aplicación web de la empresa utilizando Codeigniter y Vue.js. Crear nuevos endpoint para la API con php y después hacer las llamadas en el front con javascript."),
+    array("Desarrollador Web","OARO","2021 - 2022", "Crear nuevas páginas para las webs de diferentes clientes utilizando Symfony, twig, css3 y javcascript."),
+    array("Desarrollador Web","Lombok","2019 - 2020", "Crear nuevas páginas web para diferenetes clientes utilizando Wordpress, css3, javascript, jquery, php y mysql"),
+    array("Desarrollador Web","Feel Free Rentals","2017 - 2018", "Crear nuevas funcionalidades a la aplicación web interna de la empresa con el framewrok Joomla. Crear nuevas páginas y funcionalidades a la web de la empresa utilizando el framwork Symfony, css3, javascript, jquery y ajax"),
     array("Desarrollador Web","Servicios Creativos Bostnan","2016 - 2017", "Crear nuevas funcionalidades a la aplicación web interna. Framewrok Codeigniter y Vue.js"),
-    array("Administrador de Sistemas","ENTELGY","2012"),
-    array("Desarrollador Aplicaciones Multiplataforma","Tecnipesa","2010"),
-    array("Administrador de Sistemas","Ibermatica","2009"),
 );
 
 $cursos = array(
@@ -33,8 +30,6 @@ $cursos = array(
 $estudios = array(
     array("FP II - Desarrollo de Aplicaciones Web","Zubiri Manteo","2014 - 2016"),
     array("FP II - Administrador de sistemas informáticos","Centro SEIM","2010 - 2012"),
-    array("FP II - Desarrollo de Aplicaciones Multiplataforma","Centro SEIM","2008 - 2010"),
-    array("FP II - Administrador de sistemas informáticos","Zubiri Manteo","2006 - 2009"),
 );
 
 $freelance = array(
