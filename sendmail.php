@@ -9,10 +9,9 @@ $headers = "From:" . $from;
 $success = mail($to,$subject,$message, $headers);
 if (!$success) {
     $errorMessage = error_get_last()['message'];
-    print_r(error_get_last());
+    echo $errorMessage;
 }
 
-echo "The email message was sent.";
 ?>
 
 <?php
