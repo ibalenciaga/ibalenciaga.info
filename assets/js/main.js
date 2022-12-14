@@ -1,6 +1,5 @@
 (function($) {
-  
-  "use strict";  
+  "use strict";
 
   $(window).on('load', function() {
 
@@ -87,7 +86,25 @@
         return false;
       });
 
+      $('#sendmail').on('click', function (e) {
+          e.preventDefault();
+          var formData = $(this).serialize();
+          $.ajax({
+              type: 'POST',
+              url: '../../sendmail.php',
+              dataType: "json",
+              data: formData,
+              success: function(response) {
 
+                  console.log(response.result);
+              },
+              error: function(xhr, status, error){
+                  console.log(status);
+                  console.log(error);
+                  console.log(xhr);
+              }
+          });
+      });
 
   });      
 
