@@ -6,10 +6,9 @@
     <?php foreach ($estudios as $item){ ?>
         <div class="content-text">
             <div class="content-title">
-                <h3 class="line-title"><?=$item[0] ?></h3>
-            </div>
-            <div class="content-info">
-                <h4><?=$item[1] ?> | <?=$item[2] ?></h4>
+                <p class="line-title"><?=$item[0] ?></p>
+                <p><?=$item[2] ?></p>
+                <!--<p><?=$item[1] ?></p>-->
             </div>
         </div>
     <?php } ?>

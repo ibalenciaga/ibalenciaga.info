@@ -2,14 +2,12 @@
     <i class="icon-badge"></i>
     <h2>Cursos</h2>
 </div>
-<div class="timeline-content experience-content">
+<div class="timeline-content courses-content">
     <?php foreach ($cursos as $item){ ?>
         <div class="content-text">
             <div class="content-title">
-                <h3 class="line-title"><?=$item[0] ?></h3>
-            </div>
-            <div class="content-info">
-                <h4><?=$item[1]?></h4>
+                <p class="line-title"><?=$item[0] ?></p>
+                <p><?=$item[1] ?></p>
             </div>
         </div>
     <?php } ?>

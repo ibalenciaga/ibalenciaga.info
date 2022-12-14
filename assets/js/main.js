@@ -106,6 +106,13 @@
           });
       });
 
+      $('.experience-content .content-title').on('click', function (e) {
+          var clickedBtnID = $(this).attr('data-id');
+          $("."+clickedBtnID).toggle();
+
+
+      });
+
   });      
 
 }(jQuery));
