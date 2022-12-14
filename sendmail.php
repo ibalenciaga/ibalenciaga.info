@@ -1,4 +1,17 @@
 <?php
+ini_set( 'display_errors', 1 );
+error_reporting( E_ALL );
+$from = "test@hostinger-tutorials.com";
+$to = "test@hostinger.com";
+$subject = "Checking PHP mail";
+$message = "PHP mail works just fine";
+$headers = "From:" . $from;
+mail($to,$subject,$message, $headers);
+echo "The email message was sent.";
+?>
+
+<?php
+/*
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting( E_ALL & ~( E_NOTICE | E_STRICT | E_DEPRECATED ) ); //Aquí se genera un control de errores "NO BORRAR NI SUSTITUIR"
@@ -28,4 +41,5 @@ if (isset($_POST['email'])) {
     }
     exit;
 }
+*/
 ?>
