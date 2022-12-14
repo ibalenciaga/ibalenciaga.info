@@ -1,12 +1,54 @@
 <?php
-ini_set( 'display_errors', 1 );
-error_reporting( E_ALL );
-$from = "contacto@ibalenciaga.info";
-$to = "ibalenciaga@gmail.com";
-$subject = "Checking PHP mail";
-$message = "PHP mail works just fine";
-$headers = "From:" . $from;
-mail($to,$subject,$message, $headers);
+// Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+//Load composer's autoloader
+require 'vendor/autoload.php';
+require_once "smtp-conection.php";
+
+$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+try {
+    require("PHPMailer-master/class.phpmailer.php");
+    require("PHPMailer-master/class.smtp.php");
+
+    $mail = new PHPMailer();
+
+    $mail->IsSMTP();
+    $mail->SMTPAuth = true;
+    $mail->isHTML(true);
+
+    $smtp_connection = new smtpConection();
+    $mail->Host = $smtp_connection->host;
+    $mail->Username = $smtp_connection->username;
+    $mail->Password = $smtp_connection->password;
+    $mail->From = $smtp_connection->from;
+
+    $mail->FromName = "El nombre de remitente que queremos que aparezca";
+
+    $mail->AddAddress("contact@ibalenciaga.info");
+
+    $mail->Subject = "Contacto desde mi portfolio";
+
+    $nombre = (string)$_POST['nombre'];
+    $email = (string)$_POST['email'];
+    $asunto = (string)$_POST['asunto'];
+    $mensaje = (string)$_POST['mensaje'];
+    $body = "<p>Nombre:  $nombre </p>";
+    $body .= "<p>Email: $email </p>";
+    $body .= "<p>Asunto: $asunto </p>";
+    $body .= "<p>Mensaje: $mensaje</p>";
+
+    $mail->Body = $body;
+    $mail->AltBody = "Este es el texto para clientes de correo que no muestren HTML";
+
+    $mail->Send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+}
 
 ?>
 
