@@ -6,7 +6,12 @@ $to = "ibalenciaga@gmail.com";
 $subject = "Checking PHP mail";
 $message = "PHP mail works just fine";
 $headers = "From:" . $from;
-mail($to,$subject,$message, $headers);
+$success = mail($to,$subject,$message, $headers);
+if (!$success) {
+    $errorMessage = error_get_last()['message'];
+    print_r(error_get_last());
+}
+
 echo "The email message was sent.";
 ?>
 
@@ -33,7 +38,7 @@ if (isset($_POST['email'])) {
     $body .= "Mensaje: " . $mensaje;
     $headers = "MIME-Version: 1.0 Content-type: text/html; charset=iso-8859-1";
     // More headers
-    $headers .= 'From: <contacto@ibalenciaga.info>';
+    $headers .= "From:" . $from;
     if (mail($to, $subject, $body, $headers)) {
         echo json_encode(['result' => true]);
     } else {
