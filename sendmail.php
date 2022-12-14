@@ -1,16 +1,12 @@
 <?php
 ini_set( 'display_errors', 1 );
 error_reporting( E_ALL );
-$from = "ibalenciaga@gmail.com";
+$from = "contacto@ibalenciaga.info";
 $to = "ibalenciaga@gmail.com";
 $subject = "Checking PHP mail";
 $message = "PHP mail works just fine";
 $headers = "From:" . $from;
-$success = mail($to,$subject,$message, $headers);
-if (!$success) {
-    $errorMessage = error_get_last()['message'];
-    echo $errorMessage;
-}
+mail($to,$subject,$message, $headers);
 
 ?>
 
