@@ -1,5 +1,5 @@
 <h2>Contacto</h2>
-<form id="contactForm" action="../sendmail.php" method="post" enctype="text/plain">
+<form id="contactForm" class="myform" action="../sendmail.php" method="post" enctype="text/plain">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
@@ -34,4 +34,5 @@
             </div>
         </div>
     </div>
+    <span class="output_message">
 </form>
