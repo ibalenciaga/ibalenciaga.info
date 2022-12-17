@@ -1,5 +1,6 @@
 $(window).on('load', function(){
     $(document).on('submit', '.myform', function (e) {
+        event.preventDefault();
         // Add text 'loading...' right after clicking on the submit button.
         $('.output_message').text('Loading...');
 
