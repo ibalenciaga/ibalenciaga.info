@@ -44,13 +44,10 @@ if (isset($_POST['email'])) {
     $mail->AltBody .= "Mensaje: $message";
 
     if($mail->send())
-    {
-        $response = ['status' => 'success'];
-    }
+        $response = "success";
     else
-    {
-        $response = ['status' => 'error'];
-    }
-    var_dump($response);    echo json_encode($response);
+        $response = "error";
+
+    echo $response;
 }
 ?>

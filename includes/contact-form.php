@@ -1,4 +1,5 @@
 <h2>Contacto</h2>
+<span class="output_message">
 <form id="contactForm" class="myform" action="../helper/sendmail.php" method="post" enctype="text/plain">
     <div class="row">
         <div class="col-md-6">
@@ -34,7 +35,7 @@
             </div>
         </div>
     </div>
-    <span class="output_message">
+
 </form>
 
 <script>
@@ -50,7 +51,13 @@
             data: dataString,
             type: "POST",
             success: function(data){
-                console.log(data.status);
+                if(data ==="success"){
+                    $('.output_message').addClass("success");
+                    $('.output_message').html("Mensaje enviado correctamente");
+                }else{
+                    $('.output_message').addClass("error");
+                    $('.output_message').html("El mensaje no se ha podido enviar.");
+                }
             },
             error: function (){}
         });

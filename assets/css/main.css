@@ -200,7 +200,8 @@ a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover {color: 
 .contact .contact-form-area .footer-right-contact .single-contact p {margin-bottom: 5px}
 .contact .contact-form-area .footer-right-contact .single-contact p a {color: #666}
 .contact .contact-form-area .footer-right-contact .contact-icon {background: #00b4d9;color: #fff;border-radius: 50%;font-size: 20px;height: 40px;left: 0;padding-top: 8px;position: absolute;text-align: center;top: 50%;-webkit-transform: translateY(-50%);transform: translateY(-50%);width: 40px}
-
+.contact .output_message.success{color: #1c7430}
+.contact .output_message.error{color: #990000}
 /* FOOTER */
 .footer-area {background: #1c1c20}
 .footer-area .footer-text p {font-size: 14px;margin-top: 20px;color: #fff}
