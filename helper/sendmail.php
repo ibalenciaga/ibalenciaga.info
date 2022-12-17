@@ -41,6 +41,6 @@ if (isset($_POST['submit'])) {
     {
         $response = ['status' => 'error'];
     }
-var_dump($response);    echo json_encode($response);
+    var_dump($response);    echo json_encode($response);
 }
 ?>
