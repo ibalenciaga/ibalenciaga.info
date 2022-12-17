@@ -5,7 +5,7 @@ $(window).on('load', function(){
 
         var form = $(this);
         $.ajax({
-            url: "./sendmail.php",
+            url: "./helper/sendmail.php",
             method: "post",
             data: new FormData($(".myform")[0]),
             dataType: 'json',
