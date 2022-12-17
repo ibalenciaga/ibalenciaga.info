@@ -7,7 +7,7 @@ require("vendor/autoload.php");
 require("vendor/phpmailer/phpmailer/src/PHPMailer.php");
 require("vendor/phpmailer/phpmailer/src/SMTP.php");
 require("vendor/phpmailer/phpmailer/src/Exception.php");
-require_once "helper/smtp-connection.php";
+require_once "smtp-connection.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
