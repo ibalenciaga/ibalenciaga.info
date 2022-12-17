@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
-                <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre" required data-error="Introduce tu nombre">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required data-error="Introduce tu nombre">
                 <div class="help-block with-errors"></div>
             </div>
         </div>
@@ -28,7 +28,7 @@
                 <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
             </div>
             <div class="submit-button">
-                <input type="submit" class="btn btn-common" id="sendmail" name="send"  value="Enviar mensaje"/>
+                <input type="button" onclick="return formSubmit();" class="btn btn-common" id="sendmail" name="submit"  value="Enviar mensaje">
                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                 <div class="clearfix"></div>
             </div>
@@ -36,3 +36,28 @@
     </div>
     <span class="output_message">
 </form>
+
+<script>
+    function formSubmit(){
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var msg_subject = document.getElementById("msg_subject").value;
+        var message = document.getElementById("message").value;
+
+        var dataString = 'name='+ name + '&email=' + email + '&msg_subject=' + msg_subject + '&message=' + message ;
+        $.ajax({
+            url: "../../helper/sendmail.php",
+            data: dataString,
+            type: "POST",
+            success: function(data){
+                console.log(data.status);
+            },
+            error: function (){}
+        });
+
+
+
+
+
+    };
+</script>

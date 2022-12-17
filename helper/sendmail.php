@@ -11,7 +11,11 @@ require_once "smtp-connection.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['email'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $msg_subject = $_POST['msg_subject'];
+    $message = $_POST['message'];
     $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 
     //para poder ver mensajes de errores:
@@ -30,8 +34,14 @@ if (isset($_POST['submit'])) {
     $mail->FromName = 'Portfolio';
     $mail->addAddress("ibalenciaga@gmail.com");
     $mail->Subject = "Contacto desde mi portfolio";
-    $mail->Body = "<b>Mensaje con código HTML</b>";
-    $mail->AltBody = "Este es el texto para clientes de correo que no muestren HTML";
+    $mail->Body = "<p>Nombre: $name</p>";
+    $mail->Body .= "<p>Email: $email</p>";
+    $mail->Body .= "<p>Asunto: $msg_subject</p>";
+    $mail->Body .= "<p>Mensaje: $message</p>";
+    $mail->AltBody = "Nombre: $name";
+    $mail->AltBody .= "Email: $email";
+    $mail->AltBody .= "Asunto: $msg_subject";
+    $mail->AltBody .= "Mensaje: $message";
 
     if($mail->send())
     {
