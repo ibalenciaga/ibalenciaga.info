@@ -3,10 +3,10 @@
 // These must be at the top of your script, not inside a function
 
 
-require("vendor/autoload.php");
-require("vendor/phpmailer/phpmailer/src/PHPMailer.php");
-require("vendor/phpmailer/phpmailer/src/SMTP.php");
-require("vendor/phpmailer/phpmailer/src/Exception.php");
+require("../vendor/autoload.php");
+require("../vendor/phpmailer/phpmailer/src/PHPMailer.php");
+require("../vendor/phpmailer/phpmailer/src/SMTP.php");
+require("../vendor/phpmailer/phpmailer/src/Exception.php");
 require_once "smtp-connection.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
