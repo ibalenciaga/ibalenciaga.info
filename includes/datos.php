@@ -1,6 +1,6 @@
 <?php
 $conocimientos = Array(
-    "html5", "css3", "javascript", "jquery", "php", "symfony", "vuejs", "java", "mysql", "wordpress", "prestashop", "joomla", "photoshop"
+    "html5", "css3", "javascript", "jquery", "php", "symfony", "vuejs", "java", "mysql", "docker", "wordpress", "prestashop", "joomla", "photoshop"
 );
 
 $experiencias = array(
