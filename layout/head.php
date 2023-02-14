@@ -37,6 +37,8 @@
 <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 <!-- Main Style -->
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+<link rel="stylesheet" type="text/css" href="assets/css/stars-background.css">
 <!-- Responsive Style -->
 <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 <!-- Cookies CSS -->
