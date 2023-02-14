@@ -1,7 +1,3 @@
-<div class="timeline-title studies-title">
-    <i class="icon-graduation"></i>
-    <h2>Estudios</h2>
-</div>
 <div class="timeline-content studies-content">
     <?php foreach ($estudios as $item){ ?>
         <div class="content-text">

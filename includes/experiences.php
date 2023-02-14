@@ -1,7 +1,3 @@
-<div class="timeline-title experience-title">
-    <i class="icon-briefcase"></i>
-    <h2>Experiencia</h2>
-</div>
 <div class="timeline-content experience-content">
     <?php foreach ($experiencias as $key => $item){ ?>
         <div class="content-text">

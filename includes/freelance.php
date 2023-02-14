@@ -1,7 +1,4 @@
-<div class="timeline-title freelance-title">
-    <i class="icon-home"></i>
-    <h2>Freelance</h2>
-</div>
+
 <div class="timeline-content freelance-content">
     <?php foreach ($freelance as $item){ ?>
         <div class="content-text">

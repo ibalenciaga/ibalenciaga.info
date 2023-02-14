@@ -166,27 +166,27 @@ a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover {color: 
 }
 /* TIMELINE */
 .timeline {position: relative}
+.timeline {position: relative}
 .timeline .container{padding: 10px;}
 .timeline .timeline-item{margin: 50px 0;}
 .timeline .timeline-content{}
-.timeline .timeline-title {font-size: 20px;text-transform: uppercase;display: flex;}
+.timeline .timeline-title {display: inline-flex; font-size: 20px;text-transform: uppercase;}
 .timeline .timeline-title i{padding-right: 10px;line-height: 1;font-size: 26px;}
 .timeline .timeline-title i:before{line-height: 30px}
 .timeline .timeline-title h2{line-height: 30px;color: #00b4d9;}
-.timeline .content-text{margin: 15px 15px 0 0;flex-basis: 156px; border: 3px solid #00b4d9;border-radius: 20px;overflow: hidden;box-shadow: 5px 3px 3px 1px;}
+.timeline .content-text{display:inline-grid; margin: 15px 15px 0 0;flex-basis: 156px; border: 3px solid #00b4d9;border-radius: 20px;overflow: hidden;box-shadow: 5px 3px 3px 1px;}
 .timeline .content-title{background-color: #f0f0f0;padding: 10px;}
 .timeline .experience .content-title:hover{background-color: skyblue;}
 .timeline .experience-content .content-title:hover{cursor: pointer}
-.timeline .content-info{padding: 10px;display: none}
-
+.timeline .content-info{max-width: 300px; padding: 10px;display: none}
+#nav-tabContent{margin-top: 30px;}
 @media(min-width: 500px){
-    .timeline .container{display: grid;}
-    .timeline .container{grid-template-columns: 50% 50%;}
-    .timeline .content-text{flex-basis: 210px;}
+    .nav-tabs .nav-link{
+        width: 300px;
+    }
 }
-@media(min-width: 1200px){
-    .timeline .container{grid-template-columns: 25% 25% 25% 25%;}
-    .timeline .timeline-item{max-width: 90%;}
+@media(max-width: 500px){
+    .timeline .timeline-title h2{font-size: 24px}
 }
 
 /* CONTACTO*/
