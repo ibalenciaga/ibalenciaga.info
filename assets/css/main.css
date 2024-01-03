@@ -159,8 +159,8 @@ a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover {color: 
 .services .section-title {color: #FDFDFC;font-size: 38px;text-transform: uppercase; text-align: center;letter-spacing: 1px;line-height: 1;margin-bottom: 48px;padding: 0 10px;position: relative}
 .services .container{display: flex;flex-flow: row wrap;align-items: center;justify-content: center;}
 .services .services-item{padding: 10px 0;border-radius: 10px;}
-.services .services-item .icon {box-shadow: 0px 17px 78px rgb(0, 180, 217, 0.3);width: 60px;margin: 5px;background: #FDFDFC;border-radius: 50%;text-align: center;transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-webkit-transition: all .3s ease-in-out 0s;-o-transition: all .3s ease-in-out 0s}
-.services .services-item .icon .img-fluid {width: 55px;padding: 10px}
+.services .services-item .icon {box-shadow: 0px 17px 78px rgb(0, 180, 217, 0.3);width: 75px;margin: 5px;background: #FDFDFC;border-radius: 50%;text-align: center;transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-webkit-transition: all .3s ease-in-out 0s;-o-transition: all .3s ease-in-out 0s}
+.services .services-item .icon .img-fluid {width: 75px;padding: 10px}
 @media (min-width: 1200px) {
     .container {max-width: 1400px;}
 }
@@ -177,7 +177,8 @@ a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover {color: 
 .timeline .content-text{display:inline-grid; margin: 15px 15px 0 0;flex-basis: 156px; border: 3px solid #00b4d9;border-radius: 20px;overflow: hidden;box-shadow: 5px 3px 3px 1px;}
 .timeline .content-title{background-color: #f0f0f0;padding: 10px;}
 .timeline .experience .content-title:hover{background-color: skyblue;}
-.timeline .experience-content .content-title:hover{cursor: pointer;color: #fff;border-color: #fff;}
+.timeline .experience-content .content-title:hover{cursor: pointer; background-color: #00b4d9; color: #FDFDFD;border-color: #1c1c20;}
+.timeline .experience-content .content-title:hover ~ .timeline .content-text{border-color: #1c1c20;}
 .timeline .content-info{max-width: 300px; padding: 10px;display: none}
 #nav-tabContent{margin-top: 30px;}
 @media(min-width: 500px){
